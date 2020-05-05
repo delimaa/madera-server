@@ -1,3 +1,17 @@
+## Instruction d'installation rapide
+
+1. Installer NodeJS si pas deja fait car on a besoin de npm
+2. Cloner le repo madera-server
+3. Créer une base de données appelée "madera" et importer le dump sql dans cette base (via le fichier Dump20200505.sql à la racine du dossier madera-server).
+4. Ouvrir une console à la racine de madera-server et taper "npm install"
+5. Une fois terminé, toujours dans la même console au même endroit, taper "npm run start:dev"
+6. Cloner le repo madera-client
+7. Ouvrir une console à la racine de madera-client et taper "npm install"
+8. Une fois terminé, toujours dans la même console au même endroit, taper "npm run dev"
+9. Le navigateur devrait s'ouvrir tout seul sur localhost:8080 et voila (vous allez arriver sur l'authentification rentrez n'importe quoi tout fonctionne c'est que du visuel)
+
+# NestJS
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
