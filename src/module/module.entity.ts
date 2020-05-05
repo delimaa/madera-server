@@ -1,5 +1,5 @@
 import { PrimaryGeneratedColumn, ManyToOne, Entity, Column } from "typeorm";
-import { Allow, IsString, IsNotEmpty } from "class-validator";
+import { Allow, IsString, IsNotEmpty, IsNumber } from "class-validator";
 import { Type } from "class-transformer";
 import { Projet } from "../projet/projet.entity";
 
@@ -12,6 +12,15 @@ export class Module {
   @IsString()
   @Column()
   nom!: string;
+
+  @IsNotEmpty()
+  @IsString()
+  @Column()
+  category!: string;
+
+  @Allow()
+  @Column()
+  prix!: number;
 
   @IsNotEmpty()
   @IsString()
